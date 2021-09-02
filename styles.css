@@ -1,0 +1,130 @@
+* {
+    font-family: inherit;
+    background-color: inherit;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+html {
+    font-size: calc(1em + 0.33vw);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fefefe;
+    color: #222;
+    max-width: 800px;
+    margin: auto;
+}
+
+ul {
+    margin-left: 30px;
+}
+
+code {
+    font-family: Cascadia Code, monospace;
+}
+
+/*Style the top navigation bar*/
+.navbar {
+    overflow: hidden;
+    padding: 10px 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+a:link, a:visited {
+    color: inherit;
+}
+
+a:hover, a:active {
+    color: #555;
+}
+
+/*Style the navigation bar links*/
+.navbar a {
+    float: left;
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    line-height: 22px;
+}
+
+/*Right aligned link*/
+.navbar a.right {
+    float: right;
+}
+
+.navbar a.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/*Change color on mouse hover*/
+.navbar a:hover {
+    background-color: #ddd;
+    transition: 0.3s;
+}
+
+/* Header/Blog Title */
+.header {
+    padding: 30px;
+    text-align: center;
+    background: white;
+}
+
+.header h1 {
+    font-size: 40px;
+}
+
+/* Column container */
+.row {
+    padding: 20px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Add a card effect for articles */
+.card {
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+/*Shadow on hover*/
+.card:hover {
+    box-shadow: 0 2px 5px 2px #aaa;
+    transition: 0.3s;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 10px;
+}
+
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
