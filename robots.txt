@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://crimsogen.github.io/sitemap.xml
